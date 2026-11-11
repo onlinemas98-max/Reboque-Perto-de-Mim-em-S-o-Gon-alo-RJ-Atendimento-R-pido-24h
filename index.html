@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</title>
+     <meta name="description" content="Precisa de reboque perto de mim em São Gonçalo RJ? Atendimento rápido 24h, guincho seguro para carros, motos e utilitários. Ligue agora!">
+     <style>
+         :root {
+             --cor-verde: #2e7d32;
+             --cor-verde-claro: #e8f5e9;
+             --cor-verde-hover: #1b5e20;
+             --cor-cinza-claro: #f8f9fa;
+             --cor-cinza-texto: #555555;
+             --cor-texto: #212529;
+             --cor-branco: #ffffff;
+         }
+
+         \* {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+
+         body {
+             background-color: var(--cor-branco);
+             color: var(--cor-texto);
+             line-height: 1.6;
+             scroll-behavior: smooth;
+         }
+
+         header {
+             background-color: var(--cor-verde-claro);
+             border-bottom: 2px solid #c8e6c9;
+             position: sticky;
+             top: 0;
+             z-index: 1000;
+         }
+
+         .container {
+             max-width: 1100px;
+             margin: 0 auto;
+             padding: 0 20px;
+         }
+
+         .nav-bar {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 15px 0;
+         }
+
+         .logo {
+             font-size: 1.2rem;
+             font-weight: bold;
+             color: var(--cor-verde);
+         }
+
+         nav ul {
+             display: flex;
+             list-style: none;
+             gap: 20px;
+         }
+
+         nav ul li a {
+             text-decoration: none;
+             color: var(--cor-texto);
+             font-weight: 500;
+             transition: color 0.3s;
+         }
+
+         nav ul li a:hover {
+             color: var(--cor-verde);
+         }
+
+         .btn-topo-whatsapp {
+             background-color: var(--cor-verde);
+             color: var(--cor-branco);
+             padding: 8px 16px;
+             border-radius: 4px;
+             text-decoration: none;
+             font-weight: bold;
+             font-size: 0.9rem;
+             transition: background 0.3s;
+         }
+
+         .btn-topo-whatsapp:hover {
+             background-color: var(--cor-verde-hover);
+         }
+
+         .hero {
+             background-color: var(--cor-verde-claro);
+             padding: 60px 0;
+         }
+
+         .hero-grid {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             gap: 40px;
+             align-items: center;
+         }
+
+         .hero-content h1 {
+             font-size: 2.3rem;
+             color: var(--cor-texto);
+             margin-bottom: 20px;
+             line-height: 1.2;
+         }
+
+         .hero-content h1 span {
+             color: var(--cor-verde);
+         }
+
+         .hero-content p {
+             font-size: 1.1rem;
+             color: var(--cor-cinza-texto);
+             margin-bottom: 30px;
+         }
+
+         .cta-box {
+             display: flex;
+             gap: 15px;
+             align-items: center;
+             flex-wrap: wrap;
+         }
+
+         .btn-cta {
+             background-color: var(--cor-verde);
+             color: var(--cor-branco);
+             padding: 15px 30px;
+             font-size: 1.1rem;
+             font-weight: bold;
+             text-decoration: none;
+             border-radius: 6px;
+             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+             transition: background 0.3s;
+         }
+
+         .btn-cta:hover {
+             background-color: var(--cor-verde-hover);
+         }
+
+         .hero-image {
+             background-color: #dcedc8;
+             border-radius: 8px;
+             padding: 40px;
+             text-align: center;
+             border: 2px dashed #aed581;
+         }
+
+         .hero-image img {
+             width: 100%;
+             max-width: 320px;
+             height: auto;
+         }
+
+         section {
+             padding: 60px 0;
+         }
+
+         .section-title {
+             text-align: center;
+             font-size: 2rem;
+             margin-bottom: 15px;
+             color: var(--cor-texto);
+         }
+
+         .section-subtitle {
+             text-align: center;
+             color: var(--cor-cinza-texto);
+             margin-bottom: 40px;
+             font-size: 1.05rem;
+         }
+
+         .servicos-grid {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+             gap: 25px;
+         }
+
+         .card {
+             background: var(--cor-cinza-claro);
+             padding: 30px;
+             border-radius: 8px;
+             border: 1px solid #e0e0e0;
+         }
+
+         .card h3 {
+             color: var(--cor-verde);
+             margin-bottom: 15px;
+             font-size: 1.3rem;
+         }
+
+         .bairros-section {
+             background-color: var(--cor-verde-claro);
+         }
+
+         .bairros-list {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+             gap: 15px;
+             list-style: none;
+             text-align: center;
+         }
+
+         .bairros-list li {
+             background: var(--cor-branco);
+             padding: 12px;
+             border-radius: 4px;
+             font-weight: 500;
+             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+         }
+
+         .faq-list {
+             max-width: 800px;
+             margin: 0 auto;
+             display: flex;
+             flex-direction: column;
+             gap: 20px;
+         }
+
+         .faq-item {
+             background: var(--cor-cinza-claro);
+             padding: 20px;
+             border-radius: 6px;
+             border-left: 4px solid var(--cor-verde);
+         }
+
+         .faq-item h4 {
+             margin-bottom: 8px;
+             color: var(--cor-texto);
+         }
+
+         footer {
+             background-color: var(--cor-cinza-claro);
+             border-top: 1px solid #dee2e6;
+             padding: 40px 0 20px;
+             color: var(--cor-cinza-texto);
+             text-align: center;
+         }
+
+         footer p {
+             margin-bottom: 10px;
+             font-size: 0.95rem;
+         }
+
+         .back-to-top {
+             display: inline-block;
+             margin-top: 20px;
+             background-color: var(--cor-verde);
+             color: var(--cor-branco);
+             padding: 10px 20px;
+             border-radius: 4px;
+             text-decoration: none;
+             font-weight: bold;
+             font-size: 0.9rem;
+             transition: background 0.3s;
+         }
+
+         .back-to-top:hover {
+             background-color: var(--cor-verde-hover);
+         }
+
+         @media (max-width: 768px) {
+             .hero-grid {
+                 grid-template-columns: 1fr;
+             }
+             nav ul {
+                 display: none;
+             }
+             .hero-content h1 {
+                 font-size: 1.8rem;
+             }
+         }
+     </style>
+ </head>
+ <body id="topo">
+
+     <header>
+         <div class="container nav-bar">
+             <div class="logo">Reboque Perto de Mim SG</div>
+             <nav>
+                 <ul>
+                     <li><a href="#inicio">Início</a></li>
+                     <li><a href="#servicos">Serviços</a></li>
+                     <li><a href="#bairros">Atendimento</a></li>
+                     <li><a href="#duvidas">Dúvidas</a></li>
+                 </ul>
+             </nav>
+             <a href="tel:21998887777" class="btn-topo-whatsapp">Ligar Agora</a>
+         </div>
+     </header>
+
+     <section id="inicio" class="hero">
+         <div class="container hero-grid">
+             <div class="hero-content">
+                 <h1>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</h1>
+                 <p>Ficou com o carro parado na rua ou na estrada? Se você precisa de um <strong>reboque perto de mim</strong> com chegada rápida e preço justo, nossa central de guincho em São Gonçalo RJ está pronta para socorrer seu veículo a qualquer hora do dia ou da noite.</p>
+                 <div class="cta-box">
+                     <a href="tel:21998887777" class="btn-cta">Ligar Agora</a>
+                 </div>
+             </div>
+             <div class="hero-image">
+                <img src="https://i.postimg.cc/j5DM80h6/reboque-perto-de-mim.webp" alt="Serviço de reboque e guincho em São Gonçalo RJ" loading="eager" width="640" height="480" style="display:block;width:100%;max-width:520px;height:auto;margin:0 auto;border-radius:8px;">
+                 <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">Guincho 24 Horas Disponível</p>
+             </div>
+         </div>
+     </section>
+
+     <section id="servicos" class="container">
+         <h2 class="section-title">Serviço de Reboque e Guincho Especializado</h2>
+         <p class="section-subtitle">Soluções completas para transporte e socorro automotivo em toda a região metropolitana.</p>
+
+         <div class="servicos-grid">
+             <div class="card">
+                 <h3>Guincho para Carros e Utilitários</h3>
+                 <p>Contamos com frota equipada com plataforma hidráulica para transporte seguro do seu automóvel, evitando qualquer dano à suspensão ou à lataria durante o trajeto urbano ou rodoviário.</p>
+             </div>
+             <div class="card">
+                 <h3>Socorro Mecânico Rápido</h3>
+                 <p>Se o seu problema for bateria descarregada, pane seca ou pneu furado, nosso <strong>número de reboque perto de mim</strong> também envia suporte rápido para resolver o imprevisto no local sempre que possível.</p>
+             </div>
+             <div class="card">
+                 <h3>Atendimento 24 Horas em São Gonçalo</h3>
+                 <p>Trabalhamos 365 dias por ano. Seja de madrugada, finais de semana ou feriados prolongados, nossa equipe de plantão garante agilidade no resgate do seu veículo com total segurança.</p>
+             </div>
+         </div>
+     </section>
+
+     <section id="bairros" class="bairros-section">
+         <div class="container">
+             <h2 class="section-title">Onde Encontrar Reboque Perto de Mim</h2>
+             <p class="section-subtitle">Nossas bases estratégicas cobrem todos os principais bairros e vias de São Gonçalo RJ:</p>
+
+             <ul class="bairros-list">
+                 <li>Alcântara</li>
+                 <li>Barro Vermelho</li>
+                 <li>Colubandê</li>
+                 <li>Mutondo</li>
+                 <li>Trindade</li>
+                 <li>Neves</li>
+                 <li>Zumbi</li>
+                 <li>Boaçu</li>
+                 <li>Porto do Rosa</li>
+                 <li>Rocha do Sobrado</li>
+                 <li>Centro de São Gonçalo</li>
+                 <li>Ipiíba</li>
+             </ul>
+         </div>
+     </section>
+
+     <section class="container">
+         <h2 class="section-title">Por Que Chamar Nosso Guincho?</h2>
+         <p class="section-subtitle">Vantagens de contar com um serviço ágil, profissional e focado na sua tranquilidade.</p>
+
+         <div class="servicos-grid">
+             <div class="card">
+                 <h3>Tempo de Resposta Ágil</h3>
+                 <p>Sabemos que ficar na mão na rua é estressante. Por isso, posicionamos nossos veículos em pontos estratégicos para garantir um tempo de espera reduzido em qualquer chamado de <strong>reboque perto de mim</strong>.</p>
+             </div>
+             <div class="card">
+                 <h3>Profissionais Qualificados</h3>
+                 <p>Nossos motoristas e operadores de guincho possuem ampla experiência em manuseio de veículos blindados, importados e rebaixados, garantindo um embarque e desembarque totalmente seguro.</p>
+             </div>
+             <div class="card">
+                 <h3>Preço Justo e Transparente</h3>
+                 <p>Oferecemos orçamento claro antes de iniciar o transporte, sem taxas abusivas ou surpresas desagradáveis na hora do pagamento. Aceitamos cartões, PIX e dinheiro.</p>
+             </div>
+         </div>
+     </section>
+
+     <section id="duvidas" class="container">
+         <h2 class="section-title">Perguntas Frequentes</h2>
+         <p class="section-subtitle">Tire suas dúvidas sobre o funcionamento do nosso serviço de guincho e reboque.</p>
+
+         <div class="faq-list">
+             <div class="faq-item">
+                 <h4>Quanto tempo demora para o reboque chegar?</h4>
+                 <p>O tempo médio de chegada em São Gonçalo varia entre 20 a 40 minutos, dependendo do trânsito e da sua localização exata no momento do chamado.</p>
+             </div>
+             <div class="faq-item">
+                 <h4>Como faço para solicitar um guincho urgente?</h4>
+                 <p>Basta clicar em qualquer botão de ligar do site ou salvar o nosso número de plantão para falar imediatamente com a nossa central de atendimento.</p>
+             </div>
+             <div class="faq-item">
+                 <h4>O reboque atende viagens para fora de São Gonçalo?</h4>
+                 <p>Sim! Realizamos tanto o reboque urbano local quanto o transporte de veículos de longo curso para Niterói, Rio de Janeiro e demais cidades vizinhas.</p>
+             </div>
+         </div>
+     </section>
+
+     <footer>
+         <div class="container">
+             <p><strong>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</strong></p>
+             <p>Central de Atendimento 24 Horas | E-mail: contato@reboqueperto-sg.com.br</p>
+             <p style="font-size: 0.85rem; margin-top: 15px;">© 2026 Reboque Perto de Mim SG. Todos os direitos reservados.</p>
+             <a href="#topo" class="back-to-top">Voltar ao Topo</a>
+         </div>
+     </footer>
+
+ </body>
+ </html>
