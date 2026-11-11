@@ -1,403 +1,789 @@
+
 <!DOCTYPE html>
- <html lang="pt-BR">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</title>
-     <meta name="description" content="Precisa de reboque perto de mim em São Gonçalo RJ? Atendimento rápido 24h, guincho seguro para carros, motos e utilitários. Ligue agora!">
-     <style>
-         :root {
-             --cor-verde: #2e7d32;
-             --cor-verde-claro: #e8f5e9;
-             --cor-verde-hover: #1b5e20;
-             --cor-cinza-claro: #f8f9fa;
-             --cor-cinza-texto: #555555;
-             --cor-texto: #212529;
-             --cor-branco: #ffffff;
-         }
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-         \* {
-             margin: 0;
-             padding: 0;
-             box-sizing: border-box;
-             font-family: Arial, Helvetica, sans-serif;
-         }
+    <title>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</title>
 
-         body {
-             background-color: var(--cor-branco);
-             color: var(--cor-texto);
-             line-height: 1.6;
-             scroll-behavior: smooth;
-         }
+    <meta name="description" content="Precisa de reboque perto de mim em São Gonçalo RJ? Confira informações sobre guincho para carros, motos e utilitários. Entre em contato.">
 
-         header {
-             background-color: var(--cor-verde-claro);
-             border-bottom: 2px solid #c8e6c9;
-             position: sticky;
-             top: 0;
-             z-index: 1000;
-         }
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index, follow">
 
-         .container {
-             max-width: 1100px;
-             margin: 0 auto;
-             padding: 0 20px;
-         }
+    <link rel="canonical" href="https://onlinemas98-max.github.io/Reboque-Perto-de-Mim-em-S-o-Gon-alo-RJ-Atendimento-R-pido-24h/">
 
-         .nav-bar {
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-             padding: 15px 0;
-         }
+    <style>
+        :root {
+            --verde: #176b2c;
+            --verde-escuro: #105321;
+            --verde-claro: #edf6ef;
+            --texto: #202820;
+            --texto-secundario: #454d46;
+            --fundo: #ffffff;
+            --fundo-cinza: #f5f7f5;
+            --borda: #d5dfd6;
+            --largura: 1100px;
+        }
 
-         .logo {
-             font-size: 1.2rem;
-             font-weight: bold;
-             color: var(--cor-verde);
-         }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-         nav ul {
-             display: flex;
-             list-style: none;
-             gap: 20px;
-         }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
 
-         nav ul li a {
-             text-decoration: none;
-             color: var(--cor-texto);
-             font-weight: 500;
-             transition: color 0.3s;
-         }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--fundo);
+            color: var(--texto);
+            font-size: 18px;
+            line-height: 1.7;
+        }
 
-         nav ul li a:hover {
-             color: var(--cor-verde);
-         }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
 
-         .btn-topo-whatsapp {
-             background-color: var(--cor-verde);
-             color: var(--cor-branco);
-             padding: 8px 16px;
-             border-radius: 4px;
-             text-decoration: none;
-             font-weight: bold;
-             font-size: 0.9rem;
-             transition: background 0.3s;
-         }
+        a {
+            color: var(--verde-escuro);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
 
-         .btn-topo-whatsapp:hover {
-             background-color: var(--cor-verde-hover);
-         }
+        a:hover {
+            color: #083d17;
+        }
 
-         .hero {
-             background-color: var(--cor-verde-claro);
-             padding: 60px 0;
-         }
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #111111;
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
 
-         .hero-grid {
-             display: grid;
-             grid-template-columns: 1fr 1fr;
-             gap: 40px;
-             align-items: center;
-         }
+        .container {
+            width: min(100% - 40px, var(--largura));
+            margin-inline: auto;
+        }
 
-         .hero-content h1 {
-             font-size: 2.3rem;
-             color: var(--cor-texto);
-             margin-bottom: 20px;
-             line-height: 1.2;
-         }
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 15px;
+            z-index: 2000;
+            background: #111111;
+            color: #ffffff;
+            padding: 12px 18px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
 
-         .hero-content h1 span {
-             color: var(--cor-verde);
-         }
+        .skip-link:focus {
+            top: 12px;
+            color: #ffffff;
+        }
 
-         .hero-content p {
-             font-size: 1.1rem;
-             color: var(--cor-cinza-texto);
-             margin-bottom: 30px;
-         }
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 2px solid var(--borda);
+        }
 
-         .cta-box {
-             display: flex;
-             gap: 15px;
-             align-items: center;
-             flex-wrap: wrap;
-         }
+        .header-content {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
 
-         .btn-cta {
-             background-color: var(--cor-verde);
-             color: var(--cor-branco);
-             padding: 15px 30px;
-             font-size: 1.1rem;
-             font-weight: bold;
-             text-decoration: none;
-             border-radius: 6px;
-             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-             transition: background 0.3s;
-         }
+        .logo {
+            color: var(--verde-escuro);
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-decoration: none;
+            line-height: 1.3;
+        }
 
-         .btn-cta:hover {
-             background-color: var(--cor-verde-hover);
-         }
+        .menu ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px 22px;
+            list-style: none;
+        }
 
-         .hero-image {
-             background-color: #dcedc8;
-             border-radius: 8px;
-             padding: 40px;
-             text-align: center;
-             border: 2px dashed #aed581;
-         }
+        .menu a {
+            display: inline-block;
+            padding: 9px 4px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
 
-         .hero-image img {
-             width: 100%;
-             max-width: 320px;
-             height: auto;
-         }
+        .hero {
+            padding: 55px 0;
+            background: var(--verde-claro);
+        }
 
-         section {
-             padding: 60px 0;
-         }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 40px;
+        }
 
-         .section-title {
-             text-align: center;
-             font-size: 2rem;
-             margin-bottom: 15px;
-             color: var(--cor-texto);
-         }
+        h1 {
+            color: #123f20;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            line-height: 1.2;
+            margin-bottom: 22px;
+        }
 
-         .section-subtitle {
-             text-align: center;
-             color: var(--cor-cinza-texto);
-             margin-bottom: 40px;
-             font-size: 1.05rem;
-         }
+        h2 {
+            color: #173d22;
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
 
-         .servicos-grid {
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-             gap: 25px;
-         }
+        h3 {
+            color: #173d22;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
 
-         .card {
-             background: var(--cor-cinza-claro);
-             padding: 30px;
-             border-radius: 8px;
-             border: 1px solid #e0e0e0;
-         }
+        p {
+            margin-bottom: 16px;
+        }
 
-         .card h3 {
-             color: var(--cor-verde);
-             margin-bottom: 15px;
-             font-size: 1.3rem;
-         }
+        .hero-image {
+            text-align: center;
+        }
 
-         .bairros-section {
-             background-color: var(--cor-verde-claro);
-         }
+        .hero-image img {
+            width: 100%;
+            max-width: 520px;
+            margin: auto;
+            border-radius: 8px;
+        }
 
-         .bairros-list {
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-             gap: 15px;
-             list-style: none;
-             text-align: center;
-         }
+        .image-caption {
+            margin-top: 12px;
+            color: var(--verde-escuro);
+            font-weight: 700;
+        }
 
-         .bairros-list li {
-             background: var(--cor-branco);
-             padding: 12px;
-             border-radius: 4px;
-             font-weight: 500;
-             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-         }
+        .cta-box {
+            margin-top: 24px;
+        }
 
-         .faq-list {
-             max-width: 800px;
-             margin: 0 auto;
-             display: flex;
-             flex-direction: column;
-             gap: 20px;
-         }
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 13px 25px;
+            background: var(--verde);
+            color: #ffffff;
+            border: 2px solid var(--verde);
+            border-radius: 6px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+        }
 
-         .faq-item {
-             background: var(--cor-cinza-claro);
-             padding: 20px;
-             border-radius: 6px;
-             border-left: 4px solid var(--cor-verde);
-         }
+        .btn-cta:hover {
+            background: var(--verde-escuro);
+            border-color: var(--verde-escuro);
+            color: #ffffff;
+        }
 
-         .faq-item h4 {
-             margin-bottom: 8px;
-             color: var(--cor-texto);
-         }
+        .section {
+            padding: 55px 0;
+        }
 
-         footer {
-             background-color: var(--cor-cinza-claro);
-             border-top: 1px solid #dee2e6;
-             padding: 40px 0 20px;
-             color: var(--cor-cinza-texto);
-             text-align: center;
-         }
+        .section-gray {
+            background: var(--fundo-cinza);
+        }
 
-         footer p {
-             margin-bottom: 10px;
-             font-size: 0.95rem;
-         }
+        .section-subtitle {
+            color: var(--texto-secundario);
+            margin-bottom: 28px;
+        }
 
-         .back-to-top {
-             display: inline-block;
-             margin-top: 20px;
-             background-color: var(--cor-verde);
-             color: var(--cor-branco);
-             padding: 10px 20px;
-             border-radius: 4px;
-             text-decoration: none;
-             font-weight: bold;
-             font-size: 0.9rem;
-             transition: background 0.3s;
-         }
+        .services-grid,
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
 
-         .back-to-top:hover {
-             background-color: var(--cor-verde-hover);
-         }
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--borda);
+            border-radius: 8px;
+            padding: 24px;
+        }
 
-         @media (max-width: 768px) {
-             .hero-grid {
-                 grid-template-columns: 1fr;
-             }
-             nav ul {
-                 display: none;
-             }
-             .hero-content h1 {
-                 font-size: 1.8rem;
-             }
-         }
-     </style>
- </head>
- <body id="topo">
+        .card p:last-child {
+            margin-bottom: 0;
+        }
 
-     <header>
-         <div class="container nav-bar">
-             <div class="logo">Reboque Perto de Mim SG</div>
-             <nav>
-                 <ul>
-                     <li><a href="#inicio">Início</a></li>
-                     <li><a href="#servicos">Serviços</a></li>
-                     <li><a href="#bairros">Atendimento</a></li>
-                     <li><a href="#duvidas">Dúvidas</a></li>
-                 </ul>
-             </nav>
-             <a href="tel:21998887777" class="btn-topo-whatsapp">Ligar Agora</a>
-         </div>
-     </header>
+        .bairro-lista {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            margin-top: 25px;
+        }
 
-     <section id="inicio" class="hero">
-         <div class="container hero-grid">
-             <div class="hero-content">
-                 <h1>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</h1>
-                 <p>Ficou com o carro parado na rua ou na estrada? Se você precisa de um <strong>reboque perto de mim</strong> com chegada rápida e preço justo, nossa central de guincho em São Gonçalo RJ está pronta para socorrer seu veículo a qualquer hora do dia ou da noite.</p>
-                 <div class="cta-box">
-                     <a href="tel:21998887777" class="btn-cta">Ligar Agora</a>
-                 </div>
-             </div>
-             <div class="hero-image">
-                <img src="https://i.postimg.cc/j5DM80h6/reboque-perto-de-mim.webp" alt="Serviço de reboque e guincho em São Gonçalo RJ" loading="eager" width="640" height="480" style="display:block;width:100%;max-width:520px;height:auto;margin:0 auto;border-radius:8px;">
-                 <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">Guincho 24 Horas Disponível</p>
-             </div>
-         </div>
-     </section>
+        .bairro-lista li {
+            padding: 14px;
+            background: #ffffff;
+            border: 1px solid var(--borda);
+            border-radius: 5px;
+        }
 
-     <section id="servicos" class="container">
-         <h2 class="section-title">Serviço de Reboque e Guincho Especializado</h2>
-         <p class="section-subtitle">Soluções completas para transporte e socorro automotivo em toda a região metropolitana.</p>
+        .faq-list {
+            max-width: 850px;
+        }
 
-         <div class="servicos-grid">
-             <div class="card">
-                 <h3>Guincho para Carros e Utilitários</h3>
-                 <p>Contamos com frota equipada com plataforma hidráulica para transporte seguro do seu automóvel, evitando qualquer dano à suspensão ou à lataria durante o trajeto urbano ou rodoviário.</p>
-             </div>
-             <div class="card">
-                 <h3>Socorro Mecânico Rápido</h3>
-                 <p>Se o seu problema for bateria descarregada, pane seca ou pneu furado, nosso <strong>número de reboque perto de mim</strong> também envia suporte rápido para resolver o imprevisto no local sempre que possível.</p>
-             </div>
-             <div class="card">
-                 <h3>Atendimento 24 Horas em São Gonçalo</h3>
-                 <p>Trabalhamos 365 dias por ano. Seja de madrugada, finais de semana ou feriados prolongados, nossa equipe de plantão garante agilidade no resgate do seu veículo com total segurança.</p>
-             </div>
-         </div>
-     </section>
+        .faq-item {
+            padding: 22px 0;
+            border-bottom: 1px solid var(--borda);
+        }
 
-     <section id="bairros" class="bairros-section">
-         <div class="container">
-             <h2 class="section-title">Onde Encontrar Reboque Perto de Mim</h2>
-             <p class="section-subtitle">Nossas bases estratégicas cobrem todos os principais bairros e vias de São Gonçalo RJ:</p>
+        .faq-item h3 {
+            margin-bottom: 10px;
+        }
 
-             <ul class="bairros-list">
-                 <li>Alcântara</li>
-                 <li>Barro Vermelho</li>
-                 <li>Colubandê</li>
-                 <li>Mutondo</li>
-                 <li>Trindade</li>
-                 <li>Neves</li>
-                 <li>Zumbi</li>
-                 <li>Boaçu</li>
-                 <li>Porto do Rosa</li>
-                 <li>Rocha do Sobrado</li>
-                 <li>Centro de São Gonçalo</li>
-                 <li>Ipiíba</li>
-             </ul>
-         </div>
-     </section>
+        .faq-item p {
+            margin-bottom: 0;
+        }
 
-     <section class="container">
-         <h2 class="section-title">Por Que Chamar Nosso Guincho?</h2>
-         <p class="section-subtitle">Vantagens de contar com um serviço ágil, profissional e focado na sua tranquilidade.</p>
+        .contact-section {
+            background: var(--verde-claro);
+            text-align: center;
+        }
 
-         <div class="servicos-grid">
-             <div class="card">
-                 <h3>Tempo de Resposta Ágil</h3>
-                 <p>Sabemos que ficar na mão na rua é estressante. Por isso, posicionamos nossos veículos em pontos estratégicos para garantir um tempo de espera reduzido em qualquer chamado de <strong>reboque perto de mim</strong>.</p>
-             </div>
-             <div class="card">
-                 <h3>Profissionais Qualificados</h3>
-                 <p>Nossos motoristas e operadores de guincho possuem ampla experiência em manuseio de veículos blindados, importados e rebaixados, garantindo um embarque e desembarque totalmente seguro.</p>
-             </div>
-             <div class="card">
-                 <h3>Preço Justo e Transparente</h3>
-                 <p>Oferecemos orçamento claro antes de iniciar o transporte, sem taxas abusivas ou surpresas desagradáveis na hora do pagamento. Aceitamos cartões, PIX e dinheiro.</p>
-             </div>
-         </div>
-     </section>
+        .contact-section .btn-cta {
+            margin-top: 10px;
+        }
 
-     <section id="duvidas" class="container">
-         <h2 class="section-title">Perguntas Frequentes</h2>
-         <p class="section-subtitle">Tire suas dúvidas sobre o funcionamento do nosso serviço de guincho e reboque.</p>
+        footer {
+            padding: 35px 0;
+            background: #173d22;
+            color: #ffffff;
+            text-align: center;
+        }
 
-         <div class="faq-list">
-             <div class="faq-item">
-                 <h4>Quanto tempo demora para o reboque chegar?</h4>
-                 <p>O tempo médio de chegada em São Gonçalo varia entre 20 a 40 minutos, dependendo do trânsito e da sua localização exata no momento do chamado.</p>
-             </div>
-             <div class="faq-item">
-                 <h4>Como faço para solicitar um guincho urgente?</h4>
-                 <p>Basta clicar em qualquer botão de ligar do site ou salvar o nosso número de plantão para falar imediatamente com a nossa central de atendimento.</p>
-             </div>
-             <div class="faq-item">
-                 <h4>O reboque atende viagens para fora de São Gonçalo?</h4>
-                 <p>Sim! Realizamos tanto o reboque urbano local quanto o transporte de veículos de longo curso para Niterói, Rio de Janeiro e demais cidades vizinhas.</p>
-             </div>
-         </div>
-     </section>
+        footer p {
+            margin-bottom: 10px;
+        }
 
-     <footer>
-         <div class="container">
-             <p><strong>Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h</strong></p>
-             <p>Central de Atendimento 24 Horas | E-mail: contato@reboqueperto-sg.com.br</p>
-             <p style="font-size: 0.85rem; margin-top: 15px;">© 2026 Reboque Perto de Mim SG. Todos os direitos reservados.</p>
-             <a href="#topo" class="back-to-top">Voltar ao Topo</a>
-         </div>
-     </footer>
+        footer a {
+            color: #ffffff;
+        }
 
- </body>
- </html>
+        footer a:hover {
+            color: #e2f4e5;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 14px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .back-to-top:hover {
+            background: #ffffff;
+            color: #173d22;
+        }
+
+        @media (max-width: 800px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .menu ul {
+                gap: 4px 14px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .cards-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .bairro-lista {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 520px) {
+            body {
+                font-size: 16px;
+            }
+
+            .container {
+                width: min(100% - 30px, var(--largura));
+            }
+
+            .hero {
+                padding: 38px 0;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .services-grid,
+            .cards-grid,
+            .bairro-lista {
+                grid-template-columns: 1fr;
+            }
+
+            .menu ul {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 5px 12px;
+            }
+
+            .menu a {
+                padding: 8px 0;
+            }
+
+            .btn-cta {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media (forced-colors: active) {
+            .btn-cta,
+            .back-to-top {
+                border: 2px solid ButtonText;
+            }
+        }
+    </style>
+</head>
+
+<body id="topo">
+
+    <a class="skip-link" href="#conteudo">
+        Pular para o conteúdo principal
+    </a>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a class="logo" href="#topo" aria-label="Reboque Perto de Mim SG - Página inicial">
+                Reboque Perto de Mim SG
+            </a>
+
+            <nav class="menu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#bairros">Bairros</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <h1 id="titulo-principal">
+                        Reboque Perto de Mim em São Gonçalo RJ: Atendimento Rápido 24h
+                    </h1>
+
+                    <p>
+                        Ficou com o carro parado na rua ou na estrada? Se você precisa de um
+                        <strong>reboque perto de mim</strong>, entre em contato para consultar
+                        a disponibilidade de atendimento em São Gonçalo RJ.
+                    </p>
+
+                    <p>
+                        O serviço de guincho pode auxiliar no transporte de carros, motos
+                        e utilitários em situações de pane, acidente ou impossibilidade
+                        de continuar dirigindo.
+                    </p>
+
+                    <div class="cta-box">
+                        <a href="tel:+5521998887777"
+                           class="btn-cta"
+                           aria-label="Ligar agora para o atendimento de reboque">
+                            Ligar Agora
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="https://i.postimg.cc/j5DM80h6/reboque-perto-de-mim.webp"
+                        alt="Caminhão utilizado no serviço de reboque e transporte de veículos"
+                        width="640"
+                        height="480"
+                        fetchpriority="high"
+                    >
+
+                    <p class="image-caption">
+                        Guincho e reboque em São Gonçalo RJ
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="servicos" class="section" aria-labelledby="titulo-servicos">
+            <div class="container">
+
+                <h2 id="titulo-servicos">
+                    Serviços de Guincho e Reboque em São Gonçalo
+                </h2>
+
+                <p class="section-subtitle">
+                    Conheça algumas situações em que o serviço de reboque pode ser necessário.
+                </p>
+
+                <div class="services-grid">
+
+                    <article class="card">
+                        <h3>Reboque de Carros</h3>
+                        <p>
+                            Transporte de automóveis que não conseguem continuar circulando
+                            por causa de problemas mecânicos, elétricos ou acidentes.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Reboque de Motos</h3>
+                        <p>
+                            Transporte de motocicletas em situações de pane ou quando
+                            o veículo precisa ser levado até uma oficina.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Guincho para Utilitários</h3>
+                        <p>
+                            Consulte a disponibilidade de transporte para utilitários
+                            e outros veículos compatíveis com o equipamento utilizado.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Pane Mecânica</h3>
+                        <p>
+                            Quando o veículo apresenta falha mecânica e não pode
+                            continuar rodando com segurança.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Pane Elétrica</h3>
+                        <p>
+                            Atendimento para situações em que problemas elétricos
+                            impedem o funcionamento normal do veículo.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Transporte de Veículos</h3>
+                        <p>
+                            Consulte condições para transportar seu veículo entre
+                            bairros de São Gonçalo e outras localidades.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="bairros" class="section section-gray"
+                 aria-labelledby="titulo-bairros">
+            <div class="container">
+
+                <h2 id="titulo-bairros">
+                    Onde Encontrar Reboque Perto de Mim em São Gonçalo
+                </h2>
+
+                <p>
+                    Se você está em São Gonçalo RJ, entre em contato para consultar
+                    a disponibilidade de atendimento no seu bairro e nas regiões próximas.
+                </p>
+
+                <ul class="bairro-lista">
+                    <li>Alcântara</li>
+                    <li>Centro</li>
+                    <li>Jardim Catarina</li>
+                    <li>Colubandê</li>
+                    <li>Mutondo</li>
+                    <li>Trindade</li>
+                    <li>Neves</li>
+                    <li>Gradim</li>
+                    <li>Porto da Pedra</li>
+                    <li>Rocha</li>
+                    <li>Barro Vermelho</li>
+                    <li>Santa Catarina</li>
+                </ul>
+
+                <p style="margin-top: 22px;">
+                    A disponibilidade e o prazo de chegada dependem do endereço,
+                    do trânsito e das condições do atendimento no momento da solicitação.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section"
+                 aria-labelledby="titulo-como-funciona">
+            <div class="container">
+
+                <h2 id="titulo-como-funciona">
+                    Como Solicitar um Serviço de Reboque
+                </h2>
+
+                <div class="cards-grid">
+
+                    <article class="card">
+                        <h3>1. Entre em Contato</h3>
+                        <p>
+                            Utilize o botão de telefone para solicitar informações
+                            sobre o atendimento.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>2. Informe sua Localização</h3>
+                        <p>
+                            Informe o bairro, a rua e um ponto de referência
+                            para facilitar a identificação do local.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>3. Consulte o Orçamento</h3>
+                        <p>
+                            Explique qual é o veículo e o problema apresentado.
+                            Consulte o valor antes de confirmar o serviço.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="vantagens" class="section section-gray"
+                 aria-labelledby="titulo-vantagens">
+            <div class="container">
+
+                <h2 id="titulo-vantagens">
+                    Vantagens de Consultar um Serviço de Reboque
+                </h2>
+
+                <div class="services-grid">
+
+                    <article class="card">
+                        <h3>Atendimento por Telefone</h3>
+                        <p>
+                            O contato telefônico permite explicar a situação
+                            e consultar as condições do atendimento.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Orientação sobre o Transporte</h3>
+                        <p>
+                            Informe o tipo de veículo e o local de destino
+                            para verificar qual transporte é adequado.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Orçamento Antes do Serviço</h3>
+                        <p>
+                            Solicite as informações sobre preço, distância
+                            e condições antes de autorizar o transporte.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="duvidas" class="section"
+                 aria-labelledby="titulo-duvidas">
+            <div class="container">
+
+                <h2 id="titulo-duvidas">
+                    Perguntas Frequentes sobre Reboque em São Gonçalo
+                </h2>
+
+                <p class="section-subtitle">
+                    Tire dúvidas sobre o funcionamento do serviço de guincho e reboque.
+                </p>
+
+                <div class="faq-list">
+
+                    <article class="faq-item">
+                        <h3>Quanto tempo demora para o reboque chegar?</h3>
+                        <p>
+                            O tempo de chegada depende do trânsito, da localização
+                            do veículo e da disponibilidade do serviço no momento
+                            da solicitação. Consulte a previsão diretamente por telefone.
+                        </p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>Como faço para solicitar um guincho urgente?</h3>
+                        <p>
+                            Clique no botão de ligação disponível nesta página
+                            para entrar em contato e informar a situação do veículo.
+                        </p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>O reboque atende viagens para fora de São Gonçalo?</h3>
+                        <p>
+                            Consulte a possibilidade de transporte para Niterói,
+                            Rio de Janeiro e outras cidades. A disponibilidade
+                            depende da distância e das condições do serviço.
+                        </p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>Quais veículos podem ser transportados?</h3>
+                        <p>
+                            A possibilidade depende do equipamento disponível
+                            e das características do veículo. Informe o modelo
+                            e o tipo de veículo ao solicitar o orçamento.
+                        </p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>Como saber o preço do guincho?</h3>
+                        <p>
+                            O valor pode variar conforme a distância, o tipo
+                            de veículo e as condições do transporte. Solicite
+                            um orçamento antes de confirmar o atendimento.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="section contact-section"
+                 aria-labelledby="titulo-contato">
+            <div class="container">
+
+                <h2 id="titulo-contato">
+                    Precisa de Reboque Perto de Mim?
+                </h2>
+
+                <p>
+                    Entre em contato para consultar a disponibilidade
+                    de guincho e reboque em São Gonçalo RJ.
+                </p>
+
+                <a href="tel:+5521998887777"
+                   class="btn-cta"
+                   aria-label="Ligar para consultar o serviço de reboque">
+                    Ligar para Atendimento
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <p>
+                <strong>
+                    Reboque Perto de Mim em São Gonçalo RJ
+                </strong>
+            </p>
+
+            <p>
+                Central de Atendimento
+            </p>
+
+            <p>
+                E-mail:
+                <a href="mailto:contato@reboqueperto-sg.com.br">
+                    contato@reboqueperto-sg.com.br
+                </a>
+            </p>
+
+            <p>
+                © 2026 Reboque Perto de Mim SG.
+                Todos os direitos reservados.
+            </p>
+
+            <a href="#topo" class="back-to-top">
+                Voltar ao início da página
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
